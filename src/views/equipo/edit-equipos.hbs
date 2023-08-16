@@ -1,0 +1,30 @@
+<link rel="stylesheet" href=""> 
+
+<!-- agregar - editar - boton -->
+
+<div id="container">
+    {{#each lista}}
+
+    <form action="/equipo/editar/{{id_usuario}}" method="post">
+
+        <div id="titulo">
+            <h3>Actualizar Equipos</h3>
+        </div>
+
+        <div id="nombres">
+            <label>Nombre del Equipo:</label>
+            <input type="text" name="nombres" value="{{nombres}}" required placeholder="Nombre del equipo" />
+        </div>
+
+        <div id="descripcion">
+            <label>Descripción:</label>
+            <input type="text" name="descripcion" value="{{descripcion}}" required
+                placeholder="ingrese la debida descripción" />
+        </div>
+        <!-- boton de actualizar -->
+        <div id="boton">
+            <button type="submit">Actualizar</button>
+        </div>
+    </form>
+    {{/each }}
+</div>

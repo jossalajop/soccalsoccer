@@ -1,0 +1,40 @@
+<link rel="stylesheet" href=" " />
+
+<!-- nuevo registro-->
+<div id="container">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="/registro" method="post">
+        <div id="title">
+            <h2>Crea una Cuenta</h2>
+        </div>
+        <div id="name">
+            <label>Nombres</label>
+            <input type="text" name="nombresUsuario" id="" required placeholder="Ingrese su nombre." />
+        </div>
+
+
+        <div id="lastname">
+            <label> Apellidos</label>
+            <input type="text" name="apellidosUsuario" id="" required placeholder="Ingrese su apellido" />
+        </div>
+
+        <div id="email">
+            <label>Email</label>
+            <input type="email" name="username" id="" required placeholder="Ingrese su email." />
+        </div>
+
+        <div id="password">
+            <label>Contraseña</label>
+            <input type="password" name="password" id="" required placeholder="Ingrese su contraseña." />
+        </div>
+
+        <a href="/login">
+            <div id="button">
+                <button type="submit">Guardar</button>
+            </div>
+        </a>
+    </form>
+</div>

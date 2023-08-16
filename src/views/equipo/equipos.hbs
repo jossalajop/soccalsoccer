@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="">
+
+   <!-- crud-->
+   <div id="container">
+
+    <form action="/equipo/agregar/{{user.id_usuario}}" method="post">
+
+        <div id="titulo">
+            <h3 >Agregar Equipos</h3>
+        </div>
+
+        <div id="nombres">
+            <label >Nombre del Equipo:</label>
+            <input type="text" name="nombre" required placeholder="Nombre del Equipo." />
+        </div>
+
+        <div id="estado">
+            <label >Descripción:</label>
+            <input type="text" name="estado" required placeholder="ingrese la debida descripción." />
+        </div>
+
+        <div id="boton">
+            <button type="submit" id="">Guardar</button>
+        </div>
+
+    </form>
