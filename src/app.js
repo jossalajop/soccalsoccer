@@ -79,6 +79,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //public 
 
 //routers
+app.use(require('./router/todosjugadores.router'))
 app.use(require('./router/index.router'))
 app.use(require('./router/login.router'))
 //app.use(require('./router/equipo.router'))
