@@ -14,7 +14,10 @@ const equipo = (sequelize, type) => {
         iniciales: type.STRING,
         descripcion: type.STRING(3000),
         correo: type.STRING,
-        fecha_creacion: type.INTEGER,       
+        fecha_creacion: type.INTEGER,
+        color_principal: type.STRING,
+        color_segundario: type.STRING,
+        telefono: type.INTEGER,       
   
         creacionEquipo: {
           type: "TIMESTAMP",

@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const { mostrar, mandar, listar, actualizar, eliminar, traer} = require("../controller/equipo.controller");
+const equipoController = require("../controller/equipo.controller");
 
 
-router.get('/agregar/:id',mostrar);
+router.get('/agregar/:id',equipoController.mostrar);
 router.post('/agregar/:id',mandar)
 router.get('/listar/:id',listar)
 router.get('/editar/:id',traer)
