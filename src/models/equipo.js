@@ -16,7 +16,7 @@ const equipo = (sequelize, type) => {
         correo: type.STRING,
         fecha_creacion: type.INTEGER,
         color_principal: type.STRING,
-        color_segundario: type.STRING,
+        color_secundario: type.STRING,
         telefono: type.INTEGER,       
   
         creacionEquipo: {

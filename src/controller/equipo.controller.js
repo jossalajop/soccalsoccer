@@ -8,9 +8,9 @@ Equipos.getListEquipos = (req, res) => {
 };
 
 Equipos.postEquipo = async (req, res) => {
-    const {
-        foto,
+    const {        
         nombre,
+        foto,
         categoria,
         serie,
         iniciales,
@@ -18,7 +18,7 @@ Equipos.postEquipo = async (req, res) => {
         correo,
         fecha_creacion,
         color_principal,
-        color_segundario,
+        color_secundario,
         telefono,
     } = req.body;
     const newLink = {
@@ -31,7 +31,7 @@ Equipos.postEquipo = async (req, res) => {
         correo,
         fecha_creacion,
         color_principal,
-        color_segundario,
+        color_secundario,
         telefono,
     };
     await pool.query('INSERT INTO equipos set ?', [newLink]);

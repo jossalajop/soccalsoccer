@@ -1,36 +1,39 @@
-<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="" />
 
 <!-- tablas-->
 <form action="/equipo/listar/{{user.id_equipo}}" method="get">
-    <div id="container">
+  <div id="container">
 
-            <div class="row">
+    <div class="row">
 
-            {{#each lista}}
-            
-                <div id="id_equipo">
-                    <h3 style="text-align:center" >DESCRIPCIÓN - EQUIPO</h3>
-                   <p><strong>Nombre</strong> <br>{{nombres}}</p>
-                </div>
+      {{#each lista}}
 
-                    <br>
+        <div id="id_equipo">
+          <h3 style="text-align:center">DESCRIPCIÓN - EQUIPO</h3>
+          <p><strong>Nombre</strong> <br />{{nombres}}</p>
+        </div>
 
-                <div id="codigo">
-                    <p><strong>Descripción</strong> <br>{{descripcion}}</p>
-                </div>
+        <br />
 
-                <br>
-                <div id="boton">
-                    <a href="/equipo/editar/{{id_equipo}}"><button type="button">Editar</button></a> 
-                </div>
-                <br>
+        <div id="codigo">
+          <p><strong>Descripción</strong> <br />{{descripcion}}</p>
+        </div>
 
-                <div id="eliminar">
-                <a href="/equipo/eliminar/{{id_equipo}}" ><button type="button">Eliminar</button></a> 
-                </div>
+        <br />
+        <div id="boton">
+          <a href="/equipo/editar/{{id_equipo}}"><button
+              type="button"
+            >Editar</button></a>
+        </div>
+        <br />
 
-            
-            {{/each }}
-            </div>
+        <div id="eliminar">
+          <a href="/equipo/eliminar/{{id_equipo}}"><button
+              type="button"
+            >Eliminar</button></a>
+        </div>
+
+      {{/each}}
     </div>
+  </div>
 </form>

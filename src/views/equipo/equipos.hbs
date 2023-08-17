@@ -1,26 +1,127 @@
-<link rel="stylesheet" href="">
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+</style>
 
-   <!-- crud-->
-   <div id="container">
+<link rel="stylesheet" href="/css/equipo.css" />
+<form action="/equipos/equipo" method="POST">
+  <div id="logo"></div>
+  <div id="title">Agregar</div>
+  <div id="sub-title">Equipo a ser agregado</div>
+  <div id="input">
+    <div id="inputBox">
+      <label>Nombre del Equipo</label>
+      <input
+        type="text"
+        name="nombre"
+        class="form-control"
+        placeholder="Nombre del Equipo"
+        autofocus
+      />
+    </div>
+    <div id="inputBox">
+      <label>Foto del Equipo</label>
+      <input
+        type="text"
+        name="foto"
+        class="form-control"
+        placeholder="Foto del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>categoria del Equipo</label>
+      <input
+        type="text"
+        class="form-control"
+        name="categoria"
+        placeholder="Categoria del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Serie del Equipo</label>
+      <input
+        type="text"
+        name="serie"
+        class="form-control"
+        placeholder="Serie del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Iniciales del Equipo</label>
+      <input
+        type="text"
+        name="iniciales"
+        class="form-control"
+        placeholder="Iniciales del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Descripción del Equipo</label>
+      <input
+        type="text"
+        name="descripcion"
+        class="form-control"
+        placeholder="Descripcion del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>correo del Equipo</label>
+      <input
+        type="text"
+        name="correo"
+        class="form-control"
+        placeholder="Correo del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Fecha de creacion del Equipo</label>
+      <input
+        type="text"
+        name="fecha_creacion"
+        class="form-control"
+        placeholder="Fecha de creacion del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Color del Equipo</label>
+      <input
+        type="text"
+        name="color_principal"
+        class="form-control"
+        placeholder="Color del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>color se del Equipo</label>
+      <input
+        type="text"
+        name="iniciales"
+        class="form-control"
+        placeholder="Iniciales del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Iniciales del Equipo</label>
+      <input
+        type="text"
+        name="iniciales"
+        class="form-control"
+        placeholder="Iniciales del Equipo"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Iniciales del Equipo</label>
+      <input
+        type="text"
+        name="iniciales"
+        class="form-control"
+        placeholder="Iniciales del Equipo"
+      />
+    </div>
 
-    <form action="/equipo/agregar/{{user.id_usuario}}" method="post">
 
-        <div id="titulo">
-            <h3 >Agregar Equipos</h3>
-        </div>
-
-        <div id="nombres">
-            <label >Nombre del Equipo:</label>
-            <input type="text" name="nombre" required placeholder="Nombre del Equipo." />
-        </div>
-
-        <div id="estado">
-            <label >Descripción:</label>
-            <input type="text" name="estado" required placeholder="ingrese la debida descripción." />
-        </div>
-
-        <div id="boton">
-            <button type="submit" id="">Guardar</button>
-        </div>
-
-    </form>
+    <div id="inputBox">
+      <input type="submit" value="Guardar" />
+    </div>
+  </div>
+</form>
